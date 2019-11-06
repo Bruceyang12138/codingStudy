@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        <input type="text" id="txt1" /><br/>
+        <input type="text"  id="txt2"/><br/>
+        <input type="text"  id="txt3"/><br/>
+        <input type="text"  id="txt4"/><br/>
+        <input type="button" value="清空一个" onclick="f1()">
+        <input type="button" value="清空全部" onclick="f2()">
+
+    </form>
+    <script>
+        function $(id){
+            return document.getElementById(id); //解决代码冗余
+        }
+    function f1(){
+        //清空文本框
+        document.form1.txt1.value="";  //用name
+        document.getElementById("tex1").value="";
+            
+    }
+
+    function f2(){
+       $("txt1").value="";
+       $("txt2").value="";
+       $("txt3").value="";
+       $("txt4").value="";
+    }
+    </script>
+</body>
+</html>

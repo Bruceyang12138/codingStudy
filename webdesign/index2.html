@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //输入三个数    prompt
+ 
+    while(1){
+    flag=0;
+    var n1 =prompt("please input frist number")
+    if(isNaN(n1) == true )
+    {
+      alert("输入数字")
+     continue;
+    }
+    var n2 =prompt("please input second number")
+    if(isNaN(n2) == true )
+    {
+      alert("输入数字")
+     continue;
+    }
+    var n3 =prompt("please input third number")
+    if(isNaN(n3) == true )
+    {
+      alert("输入数字")
+      continue;
+    }
+    if(isNaN(n1) == false && isNaN(n2) == false && isNaN(n3) == false)
+   {
+          ave(); 
+          break;
+   }
+
+    } 
+  
+      function ave(){
+       sum = parseInt(n1) + parseInt(n2) +parseInt(n3);
+       ave =sum / 3;
+       alert(ave.toFixed(2));
+    
+      }
+    </script>
+</head>
+<body>
+      
+</body>
+</html>
