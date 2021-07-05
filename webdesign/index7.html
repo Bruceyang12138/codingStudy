@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img  id="pic1" src="/Web-lab/images/team/2.jpg" alt="第一张图片" />
+    <img  id="pic2" src="/Web-lab/images/team/4.jpg" alt="第4张图片" onmousemove="f1()"  onmouseout="f2()"/>
+    <script>
+        var p =document.getElementById("pic1")
+        p.onmouseover =function(){
+            p.src="/Web-lab/images/team/1.jpeg";
+            p.width= p.width*2;
+       }
+       document.getElementById("pic1").onmouseout =function(){
+        p.src="/Web-lab/images/team/2.jpg"
+        p.width = p.width /2;
+       }
+       function f1(){
+         document.getElementById("pic2").src="/Web-lab/images/team/3.jpg"
+       }
+       function f2(){
+         document.getElementById("pic2").src="/Web-lab/images/team/4.jpg"
+       }
+       
+    </script>
+</body>
+</html>

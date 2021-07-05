@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // document.write("软件工程<br>");
+    // document.writeln("软件工程"+"<br/>");
+    // document.writeln("软件工程");
+    // document.writeln("<font color=red><b>软件工程</b></font>");
+    //1.output 
+    //2.每隔2秒,window  setInterval(1:what,2 interval)
+    //5个后停止clearInterval
+var count = 0;
+h1=setInterval("output()",1000)
+function output(){
+    document.writeln("您好<br/>");
+    count++;
+    if(count==5)
+    {
+        window.clearInterval(h1);
+        return;
+    }
+}
+
+
+    </script>
+    
+</body>
+</html>
