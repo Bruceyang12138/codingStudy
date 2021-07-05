@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+h1 .box{
+    height: 500px;
+    width: 100vh;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
+    background: url(/lab3/image/1473779698.jpg) 0 0 no-repeat;
+
+}

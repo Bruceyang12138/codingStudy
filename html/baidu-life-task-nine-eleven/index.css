@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: url(./images/images/mount.png) 0 0 no-repeat;/*0 0 代表最左上角 位置*/
+    background-size: 100%;
+    /* background-size: cover;  */
+}
+header .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 1);
+    opacity:  .65;
+    overflow: hidden;
+}
+header .content{
+    width: 970px;
+    margin: 0 auto; /*留白*/
+    color: rgba(255, 255, 255, .7);
+}
+header .title{
+    font-size:62px;
+    font-weight:200;
+    color:rgba(255,255,255,1);
+    line-height:72px;
+    text-align: center;
+    margin-top: 208px;
+}
+header .text{
+    width:766px;
+    font-size:20px;
+    font-weight:200;
+    color:rgba(255,255,255,1);
+    line-height:32px;
+    opacity:0.7;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 86px;
+
+}
+.create .title2{
+    color:rgba(255,255,255,1);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    font-family:Montserrat-Light
+}
+.create .profile{
+    margin-top: 19px;
+    margin-bottom: 45px;
+    text-align: center;
+    height:10px;
+    font-size:12px;
+    font-family:Montserrat;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+    opacity:0.3;
+}
+
+
+ .create{
+ /* margin: 104px 315px 220px; */
+     margin-top : 104px;
+     margin-bottom: 220px;
+     padding: 61px 100px 52px;       /*上右下左 */
+     width: 100%;
+     border:1px solid rgba(255,255,255,.2);
+     border-radius:2px;
+     box-sizing: border-box;
+}
+.create .input input{
+    border:1px solid rgba(255,255,255,.2);
+    outline: none;
+    border-radius: 2px;
+    width: 292px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0);
+    text-indent: 22px;
+    color: #fff;
+
+}
+.create .input input[type="button"]{
+    width:125px;
+    height:50px;
+    background:rgba(255,255,255,1);
+    border-radius:2px;
+    font-size:12px;
+    font-family:Montserrat;
+    font-weight:300;
+    color:rgba(20,20,20,1);
+    text-indent: -5px;
+
+  
+}
+.create .input{
+    display: flex;
+    justify-content: space-between;
+}
